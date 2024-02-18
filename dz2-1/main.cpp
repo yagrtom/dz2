@@ -16,7 +16,7 @@ int main()
   cin >> y;
     cout <<"enter a number z" << endl;
   cin >> z;
-        if (x > y && x > z)
+        if (x > y && y > z)
                 {
                 x = x*2;
                 y = y*2;
