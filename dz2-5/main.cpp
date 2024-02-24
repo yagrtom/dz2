@@ -19,7 +19,7 @@ int main() {
     cout << "what is pozition y?" << endl;
     cin >> y2;
     
-    if ((x1 == x2) && (y1 == y1))
+    if ((x1 == x2) && (y1 == y2))
     {
         cout << "Erorr in pozition" << endl;
     }
