@@ -6,22 +6,92 @@
 */
 #include <iostream>
 using namespace std;
+
+int PositionY(string position){
+    int y;
+    switch (position[1])
+    {
+    case '1':
+    y = 1; 
+        break;
+    case '2':
+    y = 2;
+        break;
+    case '3':
+    y = 3; 
+        break;
+    case '4':
+    y = 4;
+        break;
+    case '5':
+    y = 5; 
+        break;
+    case '6':
+    y = 6;
+        break;
+    case '7':
+    y = 7; 
+        break;
+    case '8':
+    y = 8;
+        break;    
+    }
+    return y;
+}
+
+int PositionX(string position)
+{
+    int x;
+    switch (position[0])
+    {
+    case 'a':
+    x = 1;
+        break;
+    case 'b':
+    x = 2;
+        break;
+    case 'c':
+    x = 3;
+        break;
+    case 'd':
+    x = 4;
+        break;
+    case 'e':
+    x = 5;
+        break;
+    case 'f':
+    x = 6;
+        break;
+    case 'g':
+    x = 7;
+        break;
+    case 'h':
+    x = 8;
+        break;
+    }
+    
+    return x;
+}
+
+
+
 int main() {
-    int x1,y1, x2, y2, figura1;
+    int figura1;
     cout << "\n what is figura number1? \n 1-ladia, 2-slon, 3-ferz, 4-kon" << endl;
     cin >> figura1;
-    cout << "What is position x?" << endl;
-    cin >> x1;
-    cout << "what is position y?" <<endl;
-    cin >> y1;
-    cout << "\n figera number 2: \n What is position x" <<endl;
-    cin >> x2;
-    cout << "what is position y?" << endl;
-    cin >> y2;
-    
+    string position1;
+    cout << "\n Write position of figura1 (for example: a1)" << endl;
+    cin >> position1;
+    string position2;
+    cout << "\n Write position of figura1 (for example: a1)" << endl;
+    cin >> position2;
+    int x1 = PositionX(position1);
+    int x2 = PositionX(position2);
+    int y1 = PositionY(position1);
+    int y2 = PositionY(position2);
     if ((x1 == x2) && (y1 == y2))
     {
-        cout << "Erorr in position" << endl;
+        cout << "Erorr in pozition" << endl;
     }
     else {
     
@@ -71,6 +141,8 @@ int main() {
             
                 break;
     }
-    return 0;
     }
+    return 0;
 }
+
+
