@@ -50,7 +50,7 @@ cin >> Z4;
         float flatness_B = direct_Az * direct_Bx - direct_Bz * direct_Ax;
         float flatness_C = direct_Ax * direct_By - direct_Bx * direct_Ay;
      
-       float flatness_D = -(  flatness_A * X1 + flatness_B * Y1 + direct_Ax * Z1);
+       float flatness_D = -(  flatness_A * X1 + flatness_B * Y1 + flatness_C * Z1);
 
 h = (fabs(flatness_A * X4) + fabs(flatness_B * Y4) + fabs(flatness_C * Z4) + fabs(flatness_D))/ sqrt(flatness_A*flatness_A + flatness_B*flatness_B + flatness_C*flatness_C);
 cout << "h = "<< h;
